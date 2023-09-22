@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E4AF1A7C-51AB-49F5-B1CA-D198CA2EC517}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>program_console</RootNamespace>
+    <AssemblyName>program-console</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\ConsoleLJ\Consolelj.cs" />
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\ConsoleLJ\Data\ConsoleljData.cs" />
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\ConsoleLJ\Link\Code\ConsoleljLinkCode.cs" />
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\ConsoleLJ\Link\Default\ConsoleljLinkDefault.cs" />
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\ConsoleLJ\Link\Policy\ConsoleljLinkPolicy.cs" />
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\ConsoleLJ\Object\ConsoleLJDataObject\ConsoleljDataObject.cs" />
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\ConsoleLJ\Object\ConsoleLJObject\ConsoleljObject.cs" />
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\ConsoleLJ\Prototype\ConsoleljPrototype.cs" />
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\ConsoleLJ\Static\ConsoleljStaticShow.cs" />
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\ConsoleLJ\Static\ConsoleljStatic.cs" />
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\ConsoleLJ\Async\StartApplication\Action\StartApplicationAction.cs" />
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\ConsoleLJ\Async\StartApplication\Task\StartApplicationTask.cs" />
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\ConsoleLJ\Async\StartApplication\Thread\StartApplicationThread.cs" />
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\ConsoleLJ\Static\ConsoleljStaticRenderBuildName.cs" />
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\ConsoleLJ\Static\ConsoleljStaticRenderFile.cs" />
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\ConsoleLJ\Static\ConsoleljStaticRenderFileName.cs" />
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\ConsoleLJ\Static\ConsoleljStaticRenderSpecialName.cs" />
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\ConsoleLJ\Static\ConsoleljStaticRender.cs" />
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\ConsoleLJ\Static\ConsoleljStaticRenderSplit.cs" />
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\ConsoleLJ\Type\Make\Default\ConsoleljMakeDefault.cs" />
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\ConsoleLJ\Type\Make\Default\Surface\ConsoleljMakeDefaultSurface.cs" />
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\ConsoleLJ\Type\Public\Clear.cs" />
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\ConsoleLJ\Type\Public\Escape.cs" />
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\ConsoleLJ\Type\Public\ReadLine.cs" />
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\ConsoleLJ\Type\Public\Style.cs" />
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\ConsoleLJ\Type\Public\Title.cs" />
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\ConsoleLJ\Type\Set\ConsoleljSetRender.cs" />
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\ConsoleLJ\Type\Set\Surface\ConsoleljSetRenderSurface.cs" />
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\ConsoleLJ\Type\Public\WriteLine.cs" />
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\ConsoleLJ\Type\Sequence\ConsoleljSequence.cs" />
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\ConsoleLJ\Type\Sequence\Debug\ConsoleljSequenceDebug.cs" />
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\Studio\2D\Architecture\Architecture.cs" />
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\Studio\2D\Immutable\Immutable.cs" />
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\Studio\2D\Specialize\GetConsoleljInstance.cs" />
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\Studio\2D\Specialize\SetConsoleljInstance.cs" />
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\Studio\3D\Command\Command.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\Studio\3D\Command\Partition\TickPartition.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\Studio\3D\Context\Context.cs" />
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\Studio\3D\Prompt\Handle\KeyDown.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\Studio\3D\Prompt\Partition\Tick.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\Studio\3D\Prompt\Prompt.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\Studio\3D\Window\Handle\FormClosing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\Studio\3D\Window\Handle\HandleCreated.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\Studio\3D\Window\Handle\KeyDown.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\Studio\3D\Window\Handle\Load.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\Studio\3D\Window\Handle\Shown.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\Studio\3D\Window\Public\CloseWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\Studio\3D\Window\Redirect\FormClosing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\Studio\3D\Window\Redirect\HandleCreated.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\Studio\3D\Window\Redirect\KeyDown.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\Studio\3D\Window\Redirect\Load.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\Studio\3D\Window\Redirect\Shown.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\Studio\3D\Window\Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\Studio\4D\AssemblyInfo.cs" />
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\Studio\4D\Interface\Composition\Exposer\IExposer.cs" />
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\Studio\4D\Interface\Composition\Exposable\IExposable.cs" />
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\Studio\4D\Interface\Order\AssignOrder\IAssignOrder.cs" />
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\Studio\4D\Interface\Order\BindOrder\IBindOrder.cs" />
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\Studio\4D\Interface\Order\CentralOrder\ICentralOrder.cs" />
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\Studio\4D\Interface\Order\ControlOrder\IControlOrder.cs" />
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\Studio\4D\Interface\Order\EventOrder\IEventOrder.cs" />
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\Studio\4D\Interface\Order\StyleOrder\IStyleOrder.cs" />
+    <Compile Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\Studio\4D\Interface\Order\TimeOrder\ITimeOrder.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\ConsoleLJ\Meta\ConsoleLJMeta.txt" />
+    <Content Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\Studio\1D\Document.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="origin-cs-lib-dll-09-20-2023-03-19-PM-1020-program-console-101\Studio\1D\Interop\" />
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,12 @@
+C:\Users\todor\source\repos\program-console\bin\Debug\program-console.dll
+C:\Users\todor\source\repos\program-console\bin\Debug\program-console.pdb
+C:\Users\todor\source\repos\program-console\obj\Debug\program-console.csproj.AssemblyReference.cache
+C:\Users\todor\source\repos\program-console\obj\Debug\program-console.csproj.CoreCompileInputs.cache
+C:\Users\todor\source\repos\program-console\obj\Debug\program-console.dll
+C:\Users\todor\source\repos\program-console\obj\Debug\program-console.pdb
+C:\Users\todor\OneDrive\Desktop\Origin Folder\program-console\obj\Debug\program-console.csproj.AssemblyReference.cache
+C:\Users\todor\OneDrive\Desktop\Origin Folder\program-console\obj\Debug\program-console.csproj.CoreCompileInputs.cache
+C:\Users\todor\OneDrive\Desktop\Origin Folder\program-console\bin\Debug\program-console.dll
+C:\Users\todor\OneDrive\Desktop\Origin Folder\program-console\bin\Debug\program-console.pdb
+C:\Users\todor\OneDrive\Desktop\Origin Folder\program-console\obj\Debug\program-console.dll
+C:\Users\todor\OneDrive\Desktop\Origin Folder\program-console\obj\Debug\program-console.pdb
