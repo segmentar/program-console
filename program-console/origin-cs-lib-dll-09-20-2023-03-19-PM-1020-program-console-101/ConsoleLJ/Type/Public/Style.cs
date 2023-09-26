@@ -8,32 +8,63 @@ namespace Core
 
     public partial class ConsoleLJ
     {
-        public void Style(Color item_BACK_COLOR_command, Color item_FORE_COLOR_command, Color item_FORE_COLOR_prompt, Color item_BACK_COLOR_prompt)
+        public void Style(ConsoleLJCode.GUIStyle styleCode, Object objectItem)
         {
-            var boolean_safe_RETURN_should = false;
+            String reflectString;
 
-            boolean_safe_RETURN_should = boolean_safe_RETURN_should || Context.ReferencePage.HasCommand is false;
+            reflectString = objectItem.ToString();
 
-            boolean_safe_RETURN_should = boolean_safe_RETURN_should || Context.ReferencePage.HasPrompt is false;
+            var reflect_FONT = default(Font);
 
-            Boolean shouldReturnCheck;
+            var reflect_COLOR = default(Color);
 
-            shouldReturnCheck = boolean_safe_RETURN_should is true;
-
-            if (shouldReturnCheck is true)
+            try
             {
-                return;
+                reflect_FONT = (Font)objectItem;
+
+            } catch (Exception exception)
+            {
+                exception.ToString();
             }
-            else
-                "false".ToString();
 
-            Command.Instance.BackColor = item_BACK_COLOR_command;
+            try
+            {
+                reflect_COLOR = Color.FromName(reflectString);
+            }
+            catch (Exception exception)
+            {
+                exception.ToString();
+            }
 
-            Command.Instance.ForeColor = item_FORE_COLOR_command;
+            switch (styleCode)
+            {
+                case ConsoleLJCode.GUIStyle.CommandBackColor:
+                    Command.Instance.BackColor = reflect_COLOR;
+                    break;
 
-            Prompt.Instance.BackColor = item_BACK_COLOR_prompt;
+                case ConsoleLJCode.GUIStyle.CommandForeColor:
+                    Command.Instance.ForeColor = reflect_COLOR;
+                    break;
 
-            Prompt.Instance.ForeColor = item_FORE_COLOR_prompt;
+                case ConsoleLJCode.GUIStyle.CommandFont:
+                    Command.Instance.Font = reflect_FONT;
+                    break;
+
+                case ConsoleLJCode.GUIStyle.PromptBackColor:
+                    Prompt.Instance.BackColor = reflect_COLOR;
+                    break;
+
+                case ConsoleLJCode.GUIStyle.PromptForeColor:
+                    Prompt.Instance.ForeColor = reflect_COLOR;
+                    break;
+
+                case ConsoleLJCode.GUIStyle.PromptFont:
+                    Prompt.Instance.Font = reflect_FONT;
+                    break;
+
+                default:
+                    break;
+            }
 
             return;
         }

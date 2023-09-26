@@ -11,11 +11,11 @@ namespace Core
     {
         public static void RedirectFormClosing(Object sender, FormClosingEventArgs e)
         {
-            Window window;
+            Instance.Dispose();
 
-            window = sender as Window;
+            Application.Exit();
 
-            window.Dispose();
+            return;
         }
     }
 }

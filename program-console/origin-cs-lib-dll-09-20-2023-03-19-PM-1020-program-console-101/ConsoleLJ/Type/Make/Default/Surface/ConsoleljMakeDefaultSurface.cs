@@ -6,11 +6,11 @@ namespace Core
 
     public partial class ConsoleLJ
     {
-        public static ConsoleLJ MakeConsoleLJDefaultSurface(Boolean running)
+        public static ConsoleLJ MakeConsoleLJDefaultSurface()
         {
             ConsoleLJ consoleLJResult = default;
 
-            consoleLJResult = MakeConsoleLJDefault(running, ConsoleLJPolicy.ConsoleLJDebugPolicy);
+            consoleLJResult = MakeConsoleLJDefault(ConsoleLJPolicy.ConsoleLJDebugPolicy);
             
             return consoleLJResult;
         }

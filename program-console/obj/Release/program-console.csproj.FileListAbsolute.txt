@@ -1,0 +1,6 @@
+C:\Users\todor\OneDrive\Desktop\Origin Folder\program-console\bin\Release\program-console.dll
+C:\Users\todor\OneDrive\Desktop\Origin Folder\program-console\bin\Release\program-console.pdb
+C:\Users\todor\OneDrive\Desktop\Origin Folder\program-console\obj\Release\program-console.csproj.AssemblyReference.cache
+C:\Users\todor\OneDrive\Desktop\Origin Folder\program-console\obj\Release\program-console.csproj.CoreCompileInputs.cache
+C:\Users\todor\OneDrive\Desktop\Origin Folder\program-console\obj\Release\program-console.dll
+C:\Users\todor\OneDrive\Desktop\Origin Folder\program-console\obj\Release\program-console.pdb

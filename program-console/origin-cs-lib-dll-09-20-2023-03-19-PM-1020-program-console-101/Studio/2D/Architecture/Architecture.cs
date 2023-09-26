@@ -4,6 +4,73 @@ namespace Core.DimensionTwoSecond.ConsoleLJ
 {
     using System;
 
+    using System.Collections;
+
+    public partial class ArchitectureZeroTen
+    {
+        public static String[] ArgumentArray;
+
+        public static Boolean HasLength;
+
+        public static Boolean HasLinger;
+
+        public static Boolean IsExternalCall;
+
+        public static ArrayList ArgumentList;
+
+        public static Boolean HasEscapeCharacter;
+
+        public static Char EscapeCharacter;
+
+        public static Boolean HasNativeString;
+
+        public static String NativeString;
+
+        public static Boolean HasInputDirectory;
+
+        public static String InputDirectory;
+
+        public static Boolean HasOutputDirectory;
+
+        public static String OutputDirectory;
+
+        static ArchitectureZeroTen()
+        {
+            ArgumentArray = ConsoleLJDefaultArchitectureZeroTen.ArgumentArray;
+
+            HasLength = ConsoleLJDefaultArchitectureZeroTen.HasArgumentLengthDefault;
+
+            HasLinger = ConsoleLJDefaultArchitectureZeroTen.HasLingerDefault;
+
+            IsExternalCall = ConsoleLJDefaultArchitectureZeroTen.IsExternalCallDefault;
+
+            ArgumentList = ConsoleLJDefaultArchitectureZeroTen.ArgumentListDefault;
+
+            HasEscapeCharacter = ConsoleLJDefaultArchitectureZeroTen.HasEscapeCharacterDefault;
+
+            EscapeCharacter = ConsoleLJDefaultArchitectureZeroTen.EscapeCharacterDefault;
+
+            HasNativeString = ConsoleLJDefaultArchitectureZeroTen.HasNativeStringDefault;
+
+            NativeString = ConsoleLJDefaultArchitectureZeroTen.NativeStringDefault;
+
+            HasInputDirectory = ConsoleLJDefaultArchitectureZeroTen.HasInputDirectoryDefault;
+
+            InputDirectory = ConsoleLJDefaultArchitectureZeroTen.InputDirectoryDefault;
+
+            HasOutputDirectory = ConsoleLJDefaultArchitectureZeroTen.HasOutputDirectoryDefault;
+
+            OutputDirectory = ConsoleLJDefaultArchitectureZeroTen.OutputDirectoryDefault;
+
+            return;
+        }
+    }
+}
+
+namespace Core.DimensionTwoSecond.ConsoleLJ
+{
+    using System;
+
     using ConsoleLJ = Core.ConsoleLJ;
 
     public partial class ArchitectureOneFirst

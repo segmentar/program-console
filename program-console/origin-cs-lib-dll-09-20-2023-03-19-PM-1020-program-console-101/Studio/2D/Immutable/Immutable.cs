@@ -4,6 +4,63 @@ namespace Core.DimensionTwoSecond.ConsoleLJ
 {
     using System;
 
+    using System.IO;
+
+    using System.Reflection;
+
+    public partial class ImmutableZeroTen
+    {
+        public static String ProgramName;
+
+        public static String ErrorMessage;
+
+        public static String SettingName;
+
+        public static String SettingExtension;
+
+        public static String WorkingDirectoryName;
+
+        public static String WorkingDirectoryIdentity;
+
+        public static String InputFileName;
+
+        public static String InputExtension;
+
+        public static String OutputFileName;
+
+        public static String OutputExtension;
+
+        static ImmutableZeroTen()
+        {
+            ProgramName = ConsoleLJDefaultImmutableZeroTen.ProgramNameDefault;
+
+            ErrorMessage = ConsoleLJDefaultImmutableZeroTen.ErrorMessageDefault;
+
+            SettingName = ConsoleLJDefaultImmutableZeroTen.SettingNameDefault;
+
+            SettingExtension = ConsoleLJDefaultImmutableZeroTen.SettingExtensionDefault;
+
+            WorkingDirectoryName = ConsoleLJDefaultImmutableZeroTen.WorkingDirectoryNameDefault;
+
+            WorkingDirectoryIdentity = ConsoleLJDefaultImmutableZeroTen.WorkingDirectoryIdentityDefault;
+
+            InputFileName = ConsoleLJDefaultImmutableZeroTen.InputFileNameDefault;
+
+            InputExtension = ConsoleLJDefaultImmutableZeroTen.InputExtensionDefault;
+
+            OutputFileName = ConsoleLJDefaultImmutableZeroTen.OutputFileNameDefault;
+
+            OutputExtension = ConsoleLJDefaultImmutableZeroTen.OutputExtensionDefault;
+
+            return;
+        }
+    }
+}
+
+namespace Core.DimensionTwoSecond.ConsoleLJ
+{
+    using System;
+
     public partial class ImmutableOneFirst
     {
         public static readonly Boolean ShowIcon;
@@ -95,9 +152,9 @@ namespace Core.DimensionTwoSecond.ConsoleLJ
 
     public partial class ImmutableThreeThird
     {
-        public static Color BackColor;
+        public static readonly Color BackColor;
 
-        public static Color ForeColor;
+        public static readonly Color ForeColor;
 
         public static readonly FontFamily FontFamily;
 

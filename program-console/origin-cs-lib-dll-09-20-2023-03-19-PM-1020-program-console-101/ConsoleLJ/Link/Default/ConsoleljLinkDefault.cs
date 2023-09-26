@@ -4,6 +4,73 @@ namespace Core
 {
     using System;
 
+    using System.Collections;
+
+    public partial class ConsoleLJDefaultArchitectureZeroTen
+    {
+        public static String[] ArgumentArray;
+
+        public static Boolean HasArgumentLengthDefault;
+
+        public static Boolean HasLingerDefault;
+
+        public static Boolean IsExternalCallDefault;
+
+        public static ArrayList ArgumentListDefault;
+
+        public static Boolean HasEscapeCharacterDefault;
+
+        public static Char EscapeCharacterDefault;
+
+        public static Boolean HasNativeStringDefault;
+
+        public static String NativeStringDefault;
+
+        public static Boolean HasInputDirectoryDefault;
+
+        public static String InputDirectoryDefault;
+
+        public static Boolean HasOutputDirectoryDefault;
+
+        public static String OutputDirectoryDefault;
+
+        static ConsoleLJDefaultArchitectureZeroTen()
+        {
+            ArgumentArray = default(String[]);
+
+            HasArgumentLengthDefault = default(Boolean);
+
+            HasLingerDefault = default(Boolean);
+
+            IsExternalCallDefault = default(Boolean);
+
+            ArgumentListDefault = default(ArrayList);
+
+            HasEscapeCharacterDefault = default(Boolean);
+
+            EscapeCharacterDefault = default(Char);
+
+            HasNativeStringDefault = default(Boolean);
+
+            NativeStringDefault = default(String);
+
+            HasInputDirectoryDefault = default(Boolean);
+
+            InputDirectoryDefault = default(String);
+
+            HasOutputDirectoryDefault = default(Boolean);
+
+            OutputDirectoryDefault = default(String);
+
+            return;
+        }
+    }
+}
+
+namespace Core
+{
+    using System;
+
     public partial class ConsoleLJDefaultArchitectureOneFirst
     {
         public static ConsoleLJ InstanceDefault;
@@ -15,6 +82,63 @@ namespace Core
             InstanceDefault = default(ConsoleLJ);
 
             HasInstanceDefault = default(Boolean);
+
+            return;
+        }
+    }
+}
+
+namespace Core
+{
+    using System;
+
+    using System.IO;
+
+    using System.Reflection;
+
+    public partial class ConsoleLJDefaultImmutableZeroTen
+    {
+        public static String ProgramNameDefault;
+
+        public static String ErrorMessageDefault;
+
+        public static String SettingNameDefault;
+
+        public static String SettingExtensionDefault;
+
+        public static String WorkingDirectoryNameDefault;
+
+        public static String WorkingDirectoryIdentityDefault;
+
+        public static String InputFileNameDefault;
+
+        public static String InputExtensionDefault;
+
+        public static String OutputFileNameDefault;
+
+        public static String OutputExtensionDefault;
+
+        static ConsoleLJDefaultImmutableZeroTen()
+        {
+            ProgramNameDefault = Assembly.GetEntryAssembly().GetName().Name;
+
+            ErrorMessageDefault = "This object just so happened to be a default" + ' ' + '.' + ' ' + ":(";
+
+            SettingNameDefault = "Setting";
+
+            SettingExtensionDefault = "txt";
+
+            WorkingDirectoryNameDefault = "Working Directory";
+
+            WorkingDirectoryIdentityDefault = Path.GetRandomFileName();
+
+            InputFileNameDefault = "Input";
+
+            InputExtensionDefault = "package";
+
+            OutputFileNameDefault = "Output";
+
+            OutputExtensionDefault = "package";
 
             return;
         }

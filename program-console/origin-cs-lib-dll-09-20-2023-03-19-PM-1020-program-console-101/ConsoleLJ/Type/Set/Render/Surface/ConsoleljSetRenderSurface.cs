@@ -6,17 +6,15 @@ namespace Core
 
     public partial class ConsoleLJ
     {
-        public static String[] ConsoleLJRenderSetSurface(String item__PATH_RELATIVE, params Object[] objectArray)
+        public static String[] ConsoleLJRenderSetSurface(Int32 index, String item__PATH_RELATIVE, params Object[] objectArray)
         {
             String[] arrayResult = default;
 
             var list = ConsoleLJRenderSet(item__PATH_RELATIVE, objectArray);
 
-            String[] array;
+            var array = new String[list.Count];
 
-            array = new String[list.Count];
-
-            list.CopyTo(array, 0);
+            list.CopyTo(array, index);
 
             arrayResult = array;
 

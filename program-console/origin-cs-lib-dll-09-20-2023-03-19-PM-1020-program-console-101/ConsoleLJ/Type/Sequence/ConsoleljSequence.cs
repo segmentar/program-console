@@ -8,13 +8,13 @@ namespace Core
     {
         public ConsoleLJ Result { get; set; } = default;
 
-        public ConsoleLJSequence(Boolean running, Boolean debug)
+        public ConsoleLJSequence(Boolean debug)
         {
-            Debug(running, debug);
+            Debug(debug);
 
             ConsoleLJ consoleLJ;
 
-            consoleLJ = new ConsoleLJ(running, debug);
+            consoleLJ = new ConsoleLJ(debug);
 
             this.Result = consoleLJ;
 

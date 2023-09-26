@@ -6,11 +6,11 @@ namespace Core
 
     public partial class ConsoleLJ
     {
-        public static ConsoleLJ MakeConsoleLJDefault(Boolean running, Boolean debug)
+        public static ConsoleLJ MakeConsoleLJDefault(Boolean debug)
         {
             ConsoleLJ consoleLJResult = default;
 
-            var result = new ConsoleLJSequence(running, debug).Result;
+            var result = new ConsoleLJSequence(debug).Result;
 
             ConsoleLJPolicy.ConsoleLJArrayList.Add(result);
 

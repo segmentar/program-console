@@ -4,14 +4,18 @@ namespace Core
 {
     using System;
 
-    using System.Windows;
-    using System.Windows.Forms;
-
     public partial class ConsoleLJ
     {
         public void Escape()
         {
-            Application.Exit();
+            if (Context.ReferencePage.HasWindow is false)
+            {
+                return;
+            }
+            else
+                "false".ToString();
+
+            Window.CloseWindow();
 
             return;
         }

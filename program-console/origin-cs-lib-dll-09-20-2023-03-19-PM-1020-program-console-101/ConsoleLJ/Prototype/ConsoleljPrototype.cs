@@ -6,18 +6,11 @@ namespace Core
 
     public partial class ConsoleLJ
     {
-        public ConsoleLJ(Boolean running, Boolean debug)
+        public ConsoleLJ(Boolean debug)
         {
             ConsoleLJData data;
 
             data = new ConsoleLJData();
-
-            if (running is true)
-            {
-                data.IsRunning = true;
-            }
-            else
-                "false".ToString();
 
             if (debug is true)
             {

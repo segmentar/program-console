@@ -6,6 +6,8 @@ namespace Core
 {
     using System;
 
+    using System.Threading;
+
     public partial class ConsoleLJ
     {
         public String ReadLine()
@@ -29,9 +31,12 @@ namespace Core
             else
                 "false".ToString();
 
-            Data.IsWaiting = true;
+            Waiting(true);
 
-            while (ArchitectureOneFirst.Instance.Data.IsWaiting is true) ;
+            while (GetWaiting(100) is true)
+            {
+                continue;
+            }
 
             var result = Prompt.Instance.Text;
 

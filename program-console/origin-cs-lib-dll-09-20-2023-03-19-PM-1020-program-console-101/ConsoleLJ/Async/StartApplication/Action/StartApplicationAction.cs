@@ -21,12 +21,17 @@ namespace Core
 
                 AppDomain.CurrentDomain.UnhandledException += new UnhandledExceptionEventHandler((Object sender, UnhandledExceptionEventArgs e) => {
 
-                    Render($"{ConsoleLJCode.SpecialDirectory.Core_ConsoleLJ_Domain}-Exception", e.ExceptionObject);
+                    Render($"{ConsoleLJCode.SpecialDirectory.Core_ConsoleLJ_Domain}-{nameof(e.ExceptionObject)}Domain", e.ExceptionObject);
                 });
 
                 Application.ThreadException += new ThreadExceptionEventHandler((Object sender, ThreadExceptionEventArgs e) =>
                 {
-                    Render($"{ConsoleLJCode.SpecialDirectory.Core_ConsoleLJ_Application}-Exception", e.Exception);
+                    Render($"{ConsoleLJCode.SpecialDirectory.Core_ConsoleLJ_Application}-{e.Exception}Application", e.Exception);
+                });
+
+                Application.ApplicationExit += new EventHandler((Object sender, EventArgs e) => 
+                {
+                    Environment.Exit(0);
                 });
 
                 Application.EnableVisualStyles();

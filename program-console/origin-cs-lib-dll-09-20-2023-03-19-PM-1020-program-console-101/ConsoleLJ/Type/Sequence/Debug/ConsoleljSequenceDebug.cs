@@ -3,11 +3,10 @@
 namespace Core
 {
     using System;
-    using System.Windows.Forms;
 
     public partial class ConsoleLJSequence
     {
-        public static void Debug(Boolean running, Boolean debug)
+        public static void Debug(Boolean debug)
         {
             if (debug is false)
             {
@@ -20,8 +19,7 @@ namespace Core
             
                 String.Empty + nameof(ConsoleLJ) + ' ' + "::" + ' ' + nameof(ConsoleLJSequence) + ' ' + '{',
                 String.Empty + '.' + "debug",
-                String.Empty + '\t' + '~' + "01" + ' ' + nameof(running) + ':' + ' ' + running,
-                String.Empty + '\t' + '~' + "02" + ' ' + nameof(debug) + ':' + ' ' + debug,
+                String.Empty + '\t' + '~' + "01" + ' ' + nameof(debug) + ':' + ' ' + debug,
                 String.Empty + '}'
             });
 

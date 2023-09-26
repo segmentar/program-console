@@ -1,5 +1,5 @@
 ﻿
-	This is document .
+	Hoc est document .
 
 	これ　は　文書　。
 
@@ -8,5 +8,7 @@
 	مستند هذا .
 
 	Це документ .
+
+	This is document .
 
 	,,,,,

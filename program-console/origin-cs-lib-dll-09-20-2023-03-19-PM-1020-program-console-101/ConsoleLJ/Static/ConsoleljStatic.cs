@@ -32,15 +32,24 @@ namespace Core
             return;
         }
 
-        public static void Bundle()
+        public static void Bundle(Boolean debug)
         {
-#if DEBUG
-            Procedure();
-#endif
+            if (debug is true)
+            {
+                Procedure();
+            }
+            else
+                "false".ToString();
+
             Manual();
-#if DEBUG
-            Raise();
-#endif
+
+            if (debug is true)
+            {
+                Raise();
+            }
+            else
+                "false".ToString();
+
             return;
         }
 

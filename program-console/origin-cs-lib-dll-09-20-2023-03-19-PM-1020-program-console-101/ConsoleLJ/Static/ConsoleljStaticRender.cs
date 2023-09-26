@@ -8,7 +8,7 @@ namespace Core
     {
         public static void Render(String item__PATH_RELATIVE, params Object[] objectArray)
         {
-            ConsoleLJRenderSetSurface(item__PATH_RELATIVE, objectArray);
+            ConsoleLJRenderSetSurface(0, item__PATH_RELATIVE, objectArray);
 
             return;
         }

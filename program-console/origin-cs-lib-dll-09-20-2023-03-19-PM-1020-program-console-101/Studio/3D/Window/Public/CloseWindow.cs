@@ -1,7 +1,5 @@
 ﻿using Core;
 
-using Core.DimensionTwoSecond.ConsoleLJ;
-
 namespace Core
 {
     using System;
@@ -10,7 +8,7 @@ namespace Core
     {
         public static void CloseWindow()
         {
-            ArchitectureOneFirst.Instance.Data.IsRunning = false;
+            SpecializeConsoleLJ.GetConsoleLJInstance().Running(false);
 
             Instance.Hide();
 

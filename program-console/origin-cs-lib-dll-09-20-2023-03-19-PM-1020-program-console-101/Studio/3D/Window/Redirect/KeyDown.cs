@@ -1,8 +1,9 @@
 ﻿using Core;
 
+using Core.DimensionTwoSecond.ConsoleLJ;
+
 namespace Core
 {
-    using Core.DimensionTwoSecond.ConsoleLJ;
     using System;
 
     using System.Windows;
@@ -14,13 +15,9 @@ namespace Core
         {
             var escape = Convert.ToChar(27);
 
-            var enter = Convert.ToChar(13);
-
-            Boolean isEscapeCheck, isEnterCheck;
+            Boolean isEscapeCheck;
 
             isEscapeCheck = e.KeyValue.Equals(escape) is true;
-
-            isEnterCheck = e.KeyValue.Equals(enter) is true;
 
             if (isEscapeCheck is true)
             {
@@ -29,11 +26,13 @@ namespace Core
             else
                 "false".ToString();
 
+            var enter = Convert.ToChar(13);
+
             var boolean_match_READ_LINE_is = true;
 
             boolean_match_READ_LINE_is = boolean_match_READ_LINE_is && e.KeyValue.Equals(enter) is true;
 
-            boolean_match_READ_LINE_is = boolean_match_READ_LINE_is && ArchitectureOneFirst.Instance.Data.IsWaiting is true;
+            boolean_match_READ_LINE_is = boolean_match_READ_LINE_is && SpecializeConsoleLJ.GetConsoleLJInstance().Data.IsWaiting is true;
 
             Boolean isReadLineCheck;
 
@@ -41,7 +40,7 @@ namespace Core
 
             if (isReadLineCheck is true)
             {
-                ArchitectureOneFirst.Instance.Data.IsWaiting = false;
+                SpecializeConsoleLJ.GetConsoleLJInstance().Waiting(false);
             }
             else
                 "false".ToString();
