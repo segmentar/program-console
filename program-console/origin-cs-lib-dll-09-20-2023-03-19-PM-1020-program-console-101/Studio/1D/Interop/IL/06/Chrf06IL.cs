@@ -1,6 +1,6 @@
 ﻿using Core;
 
-using Core.DimensionTwoSecond;
+using Core.DimensionTwoSecond.ConsoleLJ;
 
 namespace Core
 {
@@ -10,20 +10,18 @@ namespace Core
     {
         public static void Chrf06IL()
         {
-            if (ArchitectureOneFirst.HasLength is false)
+            if (ArchitectureZeroTen.HasLength is false)
             {
                 return;
             }
             else
                 "false".ToString();
 
-            var oth_STRING = Program.ArgumentArray[0];
-
-            var safe_boolean__EQUAL_THAN = (oth_STRING.Length == 1);
+            var oth_STRING = ArchitectureZeroTen.ArgumentArray[0];
 
             Boolean isLengthCheck, shouldReturn;
 
-            isLengthCheck = safe_boolean__EQUAL_THAN is true;
+            isLengthCheck = oth_STRING.Length.Equals(1) is true;
 
             shouldReturn = isLengthCheck is false;
 
@@ -36,7 +34,7 @@ namespace Core
 
             var oth_CHARACTER = oth_STRING[0];
 
-            Specialize.SetEscapeCharacter(oth_CHARACTER, true);
+            SpecializeConsoleLJ.SetEscapeCharacter(oth_CHARACTER, true);
 
             return;
         }

@@ -28,9 +28,13 @@ namespace Core
 
         public static Boolean HasInputDirectoryDefault;
 
+        public static Boolean HasValidInputDirectoryDefault;
+
         public static String InputDirectoryDefault;
 
         public static Boolean HasOutputDirectoryDefault;
+
+        public static Boolean HasValidOutputDirectoryDefault;
 
         public static String OutputDirectoryDefault;
 
@@ -56,9 +60,13 @@ namespace Core
 
             HasInputDirectoryDefault = default(Boolean);
 
+            HasValidInputDirectoryDefault = default(Boolean);
+
             InputDirectoryDefault = default(String);
 
             HasOutputDirectoryDefault = default(Boolean);
+
+            HasValidOutputDirectoryDefault = default(Boolean);
 
             OutputDirectoryDefault = default(String);
 

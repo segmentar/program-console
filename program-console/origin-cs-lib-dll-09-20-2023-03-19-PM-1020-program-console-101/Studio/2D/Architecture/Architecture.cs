@@ -28,9 +28,13 @@ namespace Core.DimensionTwoSecond.ConsoleLJ
 
         public static Boolean HasInputDirectory;
 
+        public static Boolean HasValidInputDirectory;
+
         public static String InputDirectory;
 
         public static Boolean HasOutputDirectory;
+
+        public static Boolean HasValidOutputDirectory;
 
         public static String OutputDirectory;
 
@@ -56,9 +60,13 @@ namespace Core.DimensionTwoSecond.ConsoleLJ
 
             HasInputDirectory = ConsoleLJDefaultArchitectureZeroTen.HasInputDirectoryDefault;
 
+            HasValidInputDirectory = ConsoleLJDefaultArchitectureZeroTen.HasValidInputDirectoryDefault;
+
             InputDirectory = ConsoleLJDefaultArchitectureZeroTen.InputDirectoryDefault;
 
             HasOutputDirectory = ConsoleLJDefaultArchitectureZeroTen.HasOutputDirectoryDefault;
+
+            HasValidOutputDirectory = ConsoleLJDefaultArchitectureZeroTen.HasValidOutputDirectoryDefault;
 
             OutputDirectory = ConsoleLJDefaultArchitectureZeroTen.OutputDirectoryDefault;
 

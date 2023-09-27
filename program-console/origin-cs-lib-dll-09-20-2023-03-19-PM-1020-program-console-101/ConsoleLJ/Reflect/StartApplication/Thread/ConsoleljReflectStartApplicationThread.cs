@@ -8,11 +8,11 @@ namespace Core
 
     public partial class ConsoleLJ
     {
-        public static void StartApplicationThread()
+        public static void ConsoleLJStartApplicationThread()
         {
             Action action;
 
-            action = StartApplicationAction();
+            action = ConsoleLJStartApplicationAction();
 
             Thread thread;
 

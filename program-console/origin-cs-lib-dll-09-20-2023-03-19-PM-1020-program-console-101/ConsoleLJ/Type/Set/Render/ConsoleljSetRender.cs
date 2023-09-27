@@ -1,5 +1,7 @@
 ﻿using Core;
 
+using Core.DimensionTwoSecond.ConsoleLJ;
+
 namespace Core
 {
     using System;
@@ -42,9 +44,20 @@ namespace Core
 
             foreach (Object objectItem in objectArray)
             {
+                Boolean isDefaultCheck;
+
+                isDefaultCheck = (objectItem == default) is true;
+
                 String stringItem;
 
-                stringItem = objectItem.ToString();
+                if (isDefaultCheck)
+                {
+                    stringItem = ImmutableZeroTen.ErrorMessage;
+                }
+                else
+                {
+                    stringItem = objectItem.ToString();
+                }
 
                 var name = RenderFileName(split, ordinal);
 

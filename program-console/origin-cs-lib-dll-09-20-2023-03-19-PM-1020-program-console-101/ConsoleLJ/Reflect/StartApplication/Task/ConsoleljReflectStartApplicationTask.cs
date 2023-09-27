@@ -9,11 +9,11 @@ namespace Core
 
     public partial class ConsoleLJ
     {
-        public static void StartApplicationTask()
+        public static void ConsoleLJStartApplicationTask()
         { 
             Task task;
 
-            task = new Task(StartApplicationAction());
+            task = new Task(ConsoleLJStartApplicationAction());
 
             task.Start();
 

@@ -6,8 +6,6 @@ namespace Core
 {
     using System;
 
-    using System.Threading;
-
     public partial class ConsoleLJ
     {
         public String ReadLine()

@@ -6,5 +6,9 @@ namespace Core
 
     public partial class Interop
     {
+        public static void Finf08IL()
+        {
+            return;
+        }
     }
 }

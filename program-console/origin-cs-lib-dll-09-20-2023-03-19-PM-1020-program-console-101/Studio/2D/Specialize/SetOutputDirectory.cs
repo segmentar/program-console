@@ -6,6 +6,8 @@ namespace Core
 {
     using System;
 
+    using System.IO;
+
     public partial class SpecializeConsoleLJ
     {
         public static void SetOutputDirectory(String outputDirectory, Boolean useEscape, Boolean hasOutputDirectory)
@@ -20,6 +22,15 @@ namespace Core
             ArchitectureZeroTen.OutputDirectory = outputDirectory;
 
             ArchitectureZeroTen.HasOutputDirectory = hasOutputDirectory;
+
+            if (Directory.Exists(outputDirectory))
+            {
+                ArchitectureZeroTen.HasValidOutputDirectory = true;
+            }
+            else
+            {
+                ArchitectureZeroTen.HasValidOutputDirectory = false;
+            }
 
             return;
         }

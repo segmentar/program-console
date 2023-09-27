@@ -11,7 +11,7 @@ namespace Core
 
     public partial class ConsoleLJ
     {
-        public static Action StartApplicationAction()
+        public static Action ConsoleLJStartApplicationAction()
         {
             Action actionResult = default;
 

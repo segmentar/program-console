@@ -21,6 +21,16 @@ namespace Core
                 Interop.Linf02IL();
 
                 Interop.Extf03IL();
+
+                Interop.Reff04IL();
+
+                Interop.Debf05IL();
+
+                Interop.Chrf06IL();
+
+                Interop.Escf07IL();
+
+                Interop.Finf08IL();
             }
             else
                 "false".ToString();
@@ -31,14 +41,7 @@ namespace Core
 
             SetConsoleLJInstance(consoleLJ, true);
 
-            if (answer_REFLECT_is)
-            {
-                ConsoleLJ.StartApplicationTask();
-            }
-            else
-            {
-                ConsoleLJ.StartApplicationThread();
-            }
+            ConsoleLJ.ConsoleLJStartApplicationSurface(answer_REFLECT_is);
 
             Thread.Sleep(item_TIMEOUT);
 
