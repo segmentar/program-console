@@ -1,0 +1,11 @@
+This is documentation written in microsoft pain :)
+
+The abbriviature DSMG stands for:
+
+Documentation-Specification-Manual-Guide
+
+This is a multipart visual DSMG .
+
+Only the important stuff will be colored, the YELLOW color will be used less often .
+
+Upcomming, table of content .
